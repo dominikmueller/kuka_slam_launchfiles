@@ -1,0 +1,39 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/youbot/catkin_ws/build_isolated/cartographer_ros_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/ninja cmTryCompileExec1053888792
+[1/2] Building C object CMakeFiles/cmTryCompileExec1053888792.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTryCompileExec1053888792
+FAILED: : && /usr/bin/cc     CMakeFiles/cmTryCompileExec1053888792.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1053888792  -rdynamic && :
+CMakeFiles/cmTryCompileExec1053888792.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/youbot/catkin_ws/build_isolated/cartographer_ros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/youbot/catkin_ws/build_isolated/cartographer_ros_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/ninja cmTryCompileExec4233034834
+[1/2] Building C object CMakeFiles/cmTryCompileExec4233034834.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTryCompileExec4233034834
+FAILED: : && /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTryCompileExec4233034834.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4233034834  -rdynamic -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+

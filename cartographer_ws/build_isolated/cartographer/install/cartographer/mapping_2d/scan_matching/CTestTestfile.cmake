@@ -1,0 +1,10 @@
+# CMake generated Testfile for 
+# Source directory: /home/youbot/catkin_ws/src/cartographer/cartographer/mapping_2d/scan_matching
+# Build directory: /home/youbot/catkin_ws/build_isolated/cartographer/install/cartographer/mapping_2d/scan_matching
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(mapping_2d_scan_matching_ceres_scan_matcher_test "mapping_2d_scan_matching_ceres_scan_matcher_test")
+ADD_TEST(mapping_2d_scan_matching_correlative_scan_matcher_test "mapping_2d_scan_matching_correlative_scan_matcher_test")
+ADD_TEST(mapping_2d_scan_matching_fast_correlative_scan_matcher_test "mapping_2d_scan_matching_fast_correlative_scan_matcher_test")
+ADD_TEST(mapping_2d_scan_matching_real_time_correlative_scan_matcher_test "mapping_2d_scan_matching_real_time_correlative_scan_matcher_test")
