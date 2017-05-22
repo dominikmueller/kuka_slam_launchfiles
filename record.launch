@@ -20,7 +20,6 @@
 		  <param name="youBotArmName1" type="str" value="MyArm"/>
 	  will attempt to initialize an arm using the config file "MyArm.cfg" in your
 	  default configuration path.
-
 	  To initialize multiple arms, simply define parameters naming each of them,
 	  beginning with the parameter "youBotArmName1", then "youBotArmName2", etc.
 	-->

@@ -18,7 +18,7 @@
 
 
   <node pkg="rviz" type="rviz" name="rviz"
-    args="-d /home/youbot/Desktop/final_hector.rviz"/>
+    args="-d $(find hector_slam_launch)/rviz_cfg/final_hector.rviz"/>
 
   <include file="$(find hector_mapping)/launch/mapping_default.launch"/>
 

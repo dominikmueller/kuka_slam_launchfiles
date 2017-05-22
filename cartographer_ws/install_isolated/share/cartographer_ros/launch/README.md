@@ -6,15 +6,10 @@
 Robot file will be in ~/.ros/robot_bag_<DATE>.bag
 
 ## Playback
-```roslaunch cartographer_ros playback_2d.launch bag_filename:=~/.ros/robot_bag_<DATE>.bag```
-
-It will open rviz and run the cartographer_node.
+### With odometry
+```roslaunch cartographer_ros playback_mit_odometrie.launch bag_filename:=~/.ros/robot_bag_<DATE>.bag```
+### Without odometry
+```roslaunch cartographer_ros playback_ohne_odometrie.launch bag_filename:=~/.ros/robot_bag_<DATE>.bag```
 
 ## Live-Scan
 ```roslaunch cartographer_ros scan.launch```
-
-and
-
-``` roslaunch cartographer_ros scan_2d.launch```
-
-
